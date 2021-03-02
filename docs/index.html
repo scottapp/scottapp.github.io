@@ -6,15 +6,15 @@
 <meta name="generator" content="Docusaurus v2.0.0-alpha.70">
 <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Scott Tech Demos Blog RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Scott Tech Demos Blog Atom Feed"><title data-react-helmet="true">Asyncio Prices Downloader | Scott Tech Demos</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_version" content="current"><meta data-react-helmet="true" name="docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="Asyncio Prices Downloader | Scott Tech Demos"><meta data-react-helmet="true" name="description" content="The following is a demo to download historical prices given a list of ETF tickers from yahoo finance using asyncio."><meta data-react-helmet="true" property="og:description" content="The following is a demo to download historical prices given a list of ETF tickers from yahoo finance using asyncio."><meta data-react-helmet="true" property="og:url" content="https://scottapp.github.io//docs/"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://scottapp.github.io//docs/"><link rel="stylesheet" href="/styles.157dcc77.css">
-<link rel="preload" href="/styles.e27715fc.js" as="script">
-<link rel="preload" href="/runtime~main.6ce7706a.js" as="script">
-<link rel="preload" href="/main.9812b461.js" as="script">
-<link rel="preload" href="/1.6bf3244c.js" as="script">
-<link rel="preload" href="/56.17d89bd6.js" as="script">
-<link rel="preload" href="/57.5cb2b11d.js" as="script">
-<link rel="preload" href="/935f2afb.b41e3b8a.js" as="script">
-<link rel="preload" href="/55.05937f27.js" as="script">
-<link rel="preload" href="/ec630d1b.0295f4a4.js" as="script">
+<link rel="preload" href="/styles.17a13f5e.js" as="script">
+<link rel="preload" href="/runtime~main.a6e9567d.js" as="script">
+<link rel="preload" href="/main.f1fc0924.js" as="script">
+<link rel="preload" href="/1.d92934f8.js" as="script">
+<link rel="preload" href="/58.88e27d8d.js" as="script">
+<link rel="preload" href="/59.9c53c36f.js" as="script">
+<link rel="preload" href="/935f2afb.bed38aba.js" as="script">
+<link rel="preload" href="/57.7e63f0fc.js" as="script">
+<link rel="preload" href="/ec630d1b.efbbb091.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -39,14 +39,14 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">/opt/conda/lib/python3.6/asyncio/base_events.py in run_forever(self)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    412         self._check_closed()</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    413         if self.is_running():</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">--&gt; 414             raise RuntimeError(&#x27;This event loop is already running&#x27;)</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    415         if events._get_running_loop() is not None:</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    416             raise RuntimeError(</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">RuntimeError: This event loop is already running</span></div></div></div><button type="button" aria-label="Copy code to clipboard" class="copyButton_2GIj">Copy</button></div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/quantitative_trading/yfinance-downloader"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">yfinance Downloader »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_2xL- thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#import-the-modules" class="table-of-contents__link">Import the modules</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Links</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/scottapp" target="_blank" rel="noopener noreferrer" class="footer__link-item">My Github</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 Built with Docusaurus.</div></div></div></footer></div>
-<script src="/styles.e27715fc.js"></script>
-<script src="/runtime~main.6ce7706a.js"></script>
-<script src="/main.9812b461.js"></script>
-<script src="/1.6bf3244c.js"></script>
-<script src="/56.17d89bd6.js"></script>
-<script src="/57.5cb2b11d.js"></script>
-<script src="/935f2afb.b41e3b8a.js"></script>
-<script src="/55.05937f27.js"></script>
-<script src="/ec630d1b.0295f4a4.js"></script>
+<script src="/styles.17a13f5e.js"></script>
+<script src="/runtime~main.a6e9567d.js"></script>
+<script src="/main.f1fc0924.js"></script>
+<script src="/1.d92934f8.js"></script>
+<script src="/58.88e27d8d.js"></script>
+<script src="/59.9c53c36f.js"></script>
+<script src="/935f2afb.bed38aba.js"></script>
+<script src="/57.7e63f0fc.js"></script>
+<script src="/ec630d1b.efbbb091.js"></script>
 </body>
 </html>
